@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtgame"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txtcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/computer"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/txtgame"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/txtplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="@id/txtgame"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="50dp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnStone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stone"
+        app:layout_constraintTop_toBottomOf="@+id/txtplayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnScc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/scissors"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnStone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/paper"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnScc"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"/>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtcom"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="155dp"/>
+        <!--android:src="@drawable/paper"-->
+
+    <TextView
+        android:id="@+id/txtDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtnPaper"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:text="" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
